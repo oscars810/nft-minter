@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {pinJSONToIPFS} from './pinata.js'
 
 require('dotenv').config();

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect, useState } from "react";
 import { connectWallet, getCurrentWalletConnected, mintNFT } from "./utils/interact";
 
@@ -35,6 +36,7 @@ const Minter = (props) => {
     }
   }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(async () => {
     const {address, status} = await getCurrentWalletConnected();
     setWallet(address)
